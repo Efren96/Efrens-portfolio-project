@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+ /*sets main background color*/   
+    background-color: black;
+}
+
+.header {
+ /*header elements such as bg color, text color, font family and padding*/   
+    padding:10px;
+    font-family: 'ITC Kabel Std Book', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+    
+}
+
+.header h1 {
+ /*headers font size and display element*/   
+    display: flex;
+    font-size: 65px;
+    justify-content:center;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(32, 32, 32));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+
+.nav {
+ /*headers navigation list properties*/   
+    font-family: 'ITC Kabel Std', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+  
+}
+
+.nav ul {
+/*unordered list property */    
+    list-style-type: none;
+}
+
+.nav li {
+ /* headers list display and margin properties*/   
+    margin-left: 25px;
+    display: inline-block;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 0px;
+    margin: 0px 8px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+
+  .nav-link::before {
+    transition: 300ms;
+    height: 2.5px;
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 0, 60);
+  }
+
+  .nav-link-fade-up::before {
+    width: 100%;
+    bottom: 4px;
+    opacity: 0;
+  }
+  
+  .nav-link-fade-up:hover::before {
+    bottom: 2px;
+    opacity: 1;
+  }
+
+a {
+/*anchor elemets color and text decoration*/    
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+/* paragraphs font size*/    
+    font-size: 18px;
+    width: 50%;
+    justify-content: center;
+}
+
+.picture {
+ /*digital-marketing image properties*/   
+    height: 700px;
+    width: 100%;
+    background-image: url(./Images/IMG_2975.jpeg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+
+}
+
+.picture-paragraph {
+    font-family: 'ITC Kabel Std', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+    color: #ffffff;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 0) 1px 0 5px;
+    padding-top: 300px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.picture-paragraph-2 {
+    font-family: 'ITC Kabel Std', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 1px 0 5px;
+    position: relative;
+    padding-top: 300px;
+    padding-right: 150px;
+    padding-left: 100px;
+    text-align: right;
+
+}
+
+.content {
+ /*content sections properties*/    
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 18%;
+    border-radius: 60px;
+    padding: 3px;
+    box-shadow: inset 0 0 10px rgb(122, 122, 122);
+    height: 30px;
+}
+
+#about-me {
+/*search-engine-optimization article properties*/   
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 200px;
+    font-family: 'ITC Kabel Std book','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: center;
+}
+
+
+#work {
+/*online-reputation-management article properties*/    
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 200px;
+    font-family: 'ITC Kabel Std book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: #ffffff;
+}
+
+#contact{
+/*social-media-marketing article properties*/ 
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 200px;
+    font-family: 'ITC Kabel Std book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.footer {
+ /* footers properties such as font family, text alignment and padding*/   
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h4 {
+ /* footer heading attribite font size*/
+    font-size: 20px;
+}
