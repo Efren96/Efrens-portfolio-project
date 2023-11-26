@@ -48,15 +48,18 @@ body {
 .nav ul {
 /*unordered list property */    
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 .nav li {
  /* headers list display and margin properties*/   
-    margin-left: 25px;
-    display: inline-block;
+    display: inline;
     justify-content: center;
     cursor: pointer;
     padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
@@ -102,9 +105,9 @@ a {
 
 p {
 /* paragraphs font size*/    
-    font-size: 18px;
+    font-size: 25px;
     width: 50%;
-    justify-content: center;
+    display: block;
 }
 
 .picture {
@@ -153,34 +156,108 @@ p {
     text-align: center;
 }
 
-.section-title{
+.section-title-aboutme{
     font-size: 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    width: 18%;
+    width: 20%;
     border-radius: 60px;
-    padding: 3px;
-    box-shadow: inset 0 0 10px rgb(122, 122, 122);
-    height: 30px;
+    padding: 22px;
+    box-shadow: inset 0 0 20px rgb(122, 122, 122);
+    margin: 30px;
 }
+
+.section-title-work{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 12%;
+    border-radius: 60px;
+    padding: 22px;
+    box-shadow: inset 0 0 20px rgb(122, 122, 122);
+    margin: 30px;
+}
+
+.section-title-contact{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 15%;
+    border-radius: 60px;
+    padding: 22px;
+    box-shadow: inset 0 0 20px rgb(122, 122, 122);
+    margin: 30px;
+}
+
+.section-line{
+    border-color: rgb(91, 91, 91);
+    width: 70%;
+    margin: auto;
+}
+
+h2{
+    display: inline-block;
+}
+
+.about-me-paragraph{
+    margin: auto;
+}
+
+.work-paragraph{
+    margin: auto;
+}
+
+.contact-paragraph{
+    margin: auto;
+}
+
+.welcome{
+font-weight: bolder;
+font-style: italic;
+text-decoration: underline;
+color: #ffffff;
+font-size: 28px;
+}
+
+.slider{
+display: flex;
+overflow: auto;
+justify-content: space-evenly;
+}
+
+.work-image {
+    width: 350px;
+    height: 450px;
+    margin: 40px;
+    justify-content: center;
+    border-radius: 12px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.work-image:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0mm 2mm rgb(123, 123, 123));
+}
+
 
 #about-me {
 /*search-engine-optimization article properties*/   
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 200px;
+    padding: 20px;
+    height: 400px;
     font-family: 'ITC Kabel Std book','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     color: white;
     justify-content: center;
+    margin-top: 30px;
+    position: relative;
 }
 
 
 #work {
 /*online-reputation-management article properties*/    
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 200px;
+    padding: 20px;
+    height: 785px;
     font-family: 'ITC Kabel Std book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: black;
     color: #ffffff;
@@ -188,23 +265,85 @@ p {
 
 #contact{
 /*social-media-marketing article properties*/ 
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 200px;
+    padding: 20px;
+    height: 475px;
     font-family: 'ITC Kabel Std book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: black;
-    color: white;
+    color: white
 }
+
+.contact-slider{
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    }
+
+#phone-img{
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    justify-content: center;
+    border-radius: 50px;
+    display: flex;
+}
+
+#email-img{
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    justify-content: center;
+    border-radius: 50px;
+    justify-content: center;
+}
+
+#github-img{
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.phone-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-text{
+    display: flex;
+    justify-content: center;
+}
+
+.e-mail{
+    display: flex;
+    justify-content: center;
+}
+
+.git-hub{
+    display: flex;
+    justify-content: center;
+}   
+
 
 .footer {
  /* footers properties such as font family, text alignment and padding*/   
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'ITC Kabel Std book','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background: -webkit-linear-gradient(rgb(0, 0, 0),rgb(60, 60, 60), rgb(0, 0, 0));
+
 }
 
 .footer h4 {
  /* footer heading attribite font size*/
     font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
+    font-style: italic;
 }
+
