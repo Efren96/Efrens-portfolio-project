@@ -2,29 +2,29 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+
 }
 
 body {
- /*sets main background color*/   
+    /*sets main background color*/
     background-color: black;
 }
 
 .header {
- /*header elements such as bg color, text color, font family and padding*/   
-    padding:10px;
+    /*header elements such as bg color, text color, font family and padding*/
+    padding: 10px;
     font-family: 'ITC Kabel Std Book', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
     color: white;
     width: 100%;
-    
+
 }
 
 .header h1 {
- /*headers font size and display element*/   
+    /*headers font size and display element*/
     display: flex;
     font-size: 65px;
-    justify-content:center;
+    justify-content: center;
     margin-top: 20px;
     letter-spacing: 3px;
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(32, 32, 32));
@@ -36,24 +36,24 @@ body {
 
 
 .nav {
- /*headers navigation list properties*/   
-    font-family: 'ITC Kabel Std', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*navigation list general properties such as font family,size,color etc.*/
+    font-family: 'ITC Kabel Std Book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     text-align: center;
     background-color: black;
     width: 100%;
-  
+
 }
 
 .nav ul {
-/*unordered list property */    
+    /*unordered list property */
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
 .nav li {
- /* headers list display and margin properties*/   
+    /* headers list display and margin properties*/
     display: inline;
     justify-content: center;
     cursor: pointer;
@@ -72,58 +72,59 @@ body {
     display: inline-block;
     position: relative;
     opacity: 0.75;
-  }
-  
-  .nav-link:hover {
-    opacity: 1;
-  }
+}
 
-  .nav-link::before {
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
     transition: 300ms;
     height: 2.5px;
     content: "";
     position: absolute;
     background-color: rgb(255, 0, 60);
-  }
+}
 
-  .nav-link-fade-up::before {
+.nav-link-fade-up::before {
     width: 100%;
     bottom: 4px;
     opacity: 0;
-  }
-  
-  .nav-link-fade-up:hover::before {
+}
+
+.nav-link-fade-up:hover::before {
     bottom: 2px;
     opacity: 1;
-  }
+}
 
 a {
-/*anchor elemets color and text decoration*/    
+    /*anchor elemets color and text decoration*/
     color: #ffffff;
     text-decoration: none;
 }
 
 p {
-/* paragraphs font size*/    
+    /* paragraphs font size*/
     font-size: 25px;
     width: 50%;
     display: block;
 }
 
 .picture {
- /*digital-marketing image properties*/   
+    /*digital-marketing image properties*/
     height: 700px;
     width: 100%;
     background-image: url(./Images/IMG_2975.jpeg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     display: flex;
 
 }
 
 .picture-paragraph {
-    font-family: 'ITC Kabel Std', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center; 
+    /*text on left side of picture*/
+    font-family: 'ITC Kabel', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
     color: #ffffff;
     text-align: left;
     font-size: 50px;
@@ -135,10 +136,11 @@ p {
 }
 
 .picture-paragraph-2 {
-    font-family: 'ITC Kabel Std', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*text on right side of picture*/
+    font-family: 'ITC Kabel', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
     color: #000000;
-    font-weight: bold;
+    font-weight: bolder;
     text-shadow: rgb(255, 255, 255) 1px 0 5px;
     position: relative;
     padding-top: 300px;
@@ -149,14 +151,15 @@ p {
 }
 
 .content {
- /*content sections properties*/    
+    /*content sections properties*/
     width: 100%;
     display: inline;
     justify-content: center;
     text-align: center;
 }
 
-.section-title-aboutme{
+.section-title-aboutme {
+    /*section title styling*/
     font-size: 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
@@ -167,7 +170,8 @@ p {
     margin: 30px;
 }
 
-.section-title-work{
+.section-title-work {
+    /*section title styling*/
     font-size: 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
@@ -178,7 +182,8 @@ p {
     margin: 30px;
 }
 
-.section-title-contact{
+.section-title-contact {
+    /*section title styling*/
     font-size: 30px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
@@ -189,43 +194,49 @@ p {
     margin: 30px;
 }
 
-.section-line{
+.section-line {
     border-color: rgb(91, 91, 91);
     width: 70%;
     margin: auto;
 }
 
-h2{
+h2 {
     display: inline-block;
 }
 
-.about-me-paragraph{
+.about-me-paragraph {
+    /*article margin property*/
     margin: auto;
 }
 
-.work-paragraph{
+.work-paragraph {
+    /*article margin property*/
     margin: auto;
 }
 
-.contact-paragraph{
+.contact-paragraph {
+    /*article margin property*/
     margin: auto;
 }
 
-.welcome{
-font-weight: bolder;
-font-style: italic;
-text-decoration: underline;
-color: #ffffff;
-font-size: 28px;
+.welcome {
+    /*"welcome to my portfolio" text styling*/
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 28px;
 }
 
-.slider{
-display: flex;
-overflow: auto;
-justify-content: space-evenly;
+.slider {
+    /* "work" section image slider styling properties*/
+    display: flex;
+    overflow: auto;
+    justify-content: space-evenly;
 }
 
 .work-image {
+    /*applies to all images in the "work" section*/
     width: 350px;
     height: 450px;
     margin: 40px;
@@ -235,52 +246,54 @@ justify-content: space-evenly;
     cursor: pointer;
 }
 
-.work-image:hover{
+.work-image:hover {
+    /*hover styling for all images in the "work" section*/
     transform: scale(1.1);
     filter: drop-shadow(0 0mm 2mm rgb(123, 123, 123));
 }
 
 
 #about-me {
-/*search-engine-optimization article properties*/   
+    /*search-engine-optimization article properties*/
     padding: 20px;
     height: 400px;
-    font-family: 'ITC Kabel Std book','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'ITC Kabel Std Book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #000000;
     color: white;
     justify-content: center;
     margin-top: 30px;
-    position: relative;
 }
 
 
 #work {
-/*online-reputation-management article properties*/    
+    /*online-reputation-management article properties*/
     padding: 20px;
     height: 785px;
-    font-family: 'ITC Kabel Std book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'ITC Kabel Std Book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: black;
     color: #ffffff;
 }
 
-#contact{
-/*social-media-marketing article properties*/ 
+#contact {
+    /*social-media-marketing article properties*/
     padding: 20px;
     height: 475px;
-    font-family: 'ITC Kabel Std book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'ITC Kabel Std Book', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: black;
     color: white
 }
 
-.contact-slider{
+.contact-slider {
+    /* "contact" section image slider styling properties*/
     display: flex;
     overflow: auto;
     justify-content: center;
     align-items: center;
     height: 250px;
-    }
+}
 
-#phone-img{
+#phone-img {
+    /*phone icon image styling*/
     width: 100px;
     height: 100px;
     margin: 40px;
@@ -289,7 +302,8 @@ justify-content: space-evenly;
     display: flex;
 }
 
-#email-img{
+#email-img {
+    /*mail icon image styling*/
     width: 100px;
     height: 100px;
     margin: 40px;
@@ -298,7 +312,8 @@ justify-content: space-evenly;
     justify-content: center;
 }
 
-#github-img{
+#github-img {
+    /*github logo image styling*/
     width: 100px;
     height: 100px;
     margin: 40px;
@@ -306,44 +321,46 @@ justify-content: space-evenly;
     border-radius: 50px;
 }
 
-.phone-div{
+.phone-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.phone-text{
+.phone-text {
+    /*text syling for "phone" article*/
     display: flex;
     justify-content: center;
 }
 
-.e-mail{
+.e-mail {
+    /*text syling for "e-mail" article*/
     display: flex;
     justify-content: center;
 }
 
-.git-hub{
+.git-hub {
+    /*text syling for "github" article*/
     display: flex;
     justify-content: center;
-}   
+}
 
 
 .footer {
- /* footers properties such as font family, text alignment and padding*/   
+    /* footers properties such as font family, text alignment and padding*/
     padding: 30px;
     clear: both;
-    font-family:'ITC Kabel Std book','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'ITC Kabel Std Book', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    background: -webkit-linear-gradient(rgb(0, 0, 0),rgb(60, 60, 60), rgb(0, 0, 0));
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(60, 60, 60), rgb(0, 0, 0));
 
 }
 
 .footer h4 {
- /* footer heading attribite font size*/
+    /* footer heading attribite font size*/
     font-size: 20px;
     color: #ffffff;
     justify-content: center;
     font-style: italic;
 }
-

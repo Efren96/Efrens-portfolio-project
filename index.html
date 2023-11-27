@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!--nav bar list items-->
     <nav class="nav">
         <header class="header">
             <h1>Efren Leal</h1>
@@ -25,11 +26,15 @@
     </nav>
     </header>
 
+    <!--div .picture contains an image added in css and the text on the image-->
     <div class="picture">
         <p class="picture-paragraph">Full Stack Developer.</p>
         <p class="picture-paragraph-2">Code Enthusiast.</p>
     </div>
+
+    <!--secton contains 3 articles, "about me", "work", and "contact"-->
     <section class="content">
+        <!--article 1 "about me"-->
         <article id="about-me" class="about-me">
             <h2 class="section-title-aboutme">About Me</h2>
             <p class="about-me-paragraph">
@@ -37,39 +42,44 @@
                 front-end and back-end development. <br><br><span class="welcome">Welcome to my portfolio!</span>
             </p>
         </article>
+        <!--<hr> adds a line at the end or begining of the section-->
         <hr class="section-line">
+        <!--article 2 "work"-->
         <article id="work" class="work">
             <h2 class="section-title-work">Work</h2>
             <p class="work-paragraph">
             </p>
+            <!--div .slider contains 3 images in the work section-->
             <div class="slider">
-                    <a href="https://efren96.github.io/week-one-homework/" target="_blank">
-                        <img class="work-image" src="./Images/01-html-css-git-homework-demo.jpg"></a>
-                <a href="https://efren96.github.io/prework-study-guide/" target="_blank"><img class="work-image"
-                        src="./Images/IMG_4272.jpg"></a>
-                <img class="work-image" src="./Images/02-app-tablet.jpg">
+                <a href="https://efren96.github.io/week-one-homework/" target="_blank">
+                    <img class="work-image" src="./Images/01-html-css-git-homework-demo.jpg"
+                        alt="Horiseon Website Screenshot"></a>
+                <a href="https://efren96.github.io/prework-study-guide/" target="_blank">
+                    <img class="work-image" src="./Images/IMG_4272.jpg" alt="Prework Study Guide Screenshot"></a>
+                <img class="work-image" src="./Images/02-app-tablet.jpg" alt="Flexbox Cheatsheet Website Screenshot">
             </div>
         </article>
+        <!--article 3 "contact"-->
         <article id="contact" class="contact">
             <hr class="section-line">
             <h2 class="section-title-contact">Contact</h2>
             <div class="contact-slider">
-
-                <div class="myDiv">
-                    <img id="phone-img" src="./Images/IMG_4275.jpg">
+                <div class="contact-div">
+                    <img id="phone-img" src="./Images/IMG_4275.jpg" alt="Phone Icon Image">
                     <span class="phone-text">(713)-679-0177<span>
                 </div>
-                <div class="myDiv">
-                    <img id="email-img" src="./Images/IMG_4273.jpg">
+                <div class="contact-div">
+                    <img id="email-img" src="./Images/IMG_4273.jpg" alt="Mail Icon Image">
                     <span class="e-mail">efrenleal19@gmail.com</span>
                 </div>
-                <div class="myDiv">
-                    <img id="github-img" src="./Images/IMG_4274.jpg">
+                <div class="contact-div">
+                    <img id="github-img" src="./Images/IMG_4274.jpg" alt="Github Logo">
                     <span class="git-hub">github.com/Efren96</span>
                 </div>
-
+            </div>
         </article>
     </section>
+    <!--closing footer section-->
     <footer class="footer">
         <h4>Thank you for visiting my portfolio!</h4>
     </footer>
