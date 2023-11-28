@@ -19,8 +19,7 @@ For this weeks project, i had to build my portolio. It had to have my name, a pi
 
 * Finally, once i felt like my portfolio met all the criteria, i pushed it to GitHub.
 
-> **Efren's Portfolio Link**: 
+> **Efren's Portfolio Link**: https://efren96.github.io/Efrens-portfolio-project/
 
 ### Screenshot
-<img src="./">
-test
+<img src="./Images/Portfolio Screenshot.png">
